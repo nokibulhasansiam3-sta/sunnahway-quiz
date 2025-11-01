@@ -1,0 +1,60 @@
+{
+  "categories": [
+    {
+      "id": "quran_basic",
+      "name": "কুরআন ভিত্তিক",
+      "icon": "📖",
+      "color": "0xFF4CAF50",
+      "questionCount": 100,
+      "enabled": true
+    },
+    {
+      "id": "hadith_knowledge",
+      "name": "হাদিস জ্ঞান",
+      "icon": "📚",
+      "color": "0xFF2196F3",
+      "questionCount": 100,
+      "enabled": true
+    },
+    {
+      "id": "sirat_biography",
+      "name": "সীরাত ও জীবনী",
+      "icon": "🕌",
+      "color": "0xFFFF9800",
+      "questionCount": 100,
+      "enabled": true
+    },
+    {
+      "id": "khulafaye_rashedin",
+      "name": "খুলাফায়ে রাশেদীন",
+      "icon": "👥",
+      "color": "0xFF9C27B0",
+      "questionCount": 100,
+      "enabled": true
+    },
+    {
+      "id": "islamic_history",
+      "name": "ইসলামিক ইতিহাস",
+      "icon": "🏛️",
+      "color": "0xFFE91E63",
+      "questionCount": 100,
+      "enabled": true
+    },
+    {
+      "id": "fiqh_jurisprudence",
+      "name": "ফিকহ ও আইনশাস্ত্র",
+      "icon": "⚖️",
+      "color": "0xFF00BCD4",
+      "questionCount": 100,
+      "enabled": true
+    },
+    {
+      "id": "general_knowledge",
+      "name": "সাধারণ জ্ঞান",
+      "icon": "🌟",
+      "color": "0xFFFF5722",
+      "questionCount": 100,
+      "enabled": true
+    }
+  ]
+}
