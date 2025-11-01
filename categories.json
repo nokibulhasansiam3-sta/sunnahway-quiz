@@ -62,6 +62,15 @@
       "color": "0xFFFF5722",
       "questionCount": 100,
       "enabled": true
+    },
+    {
+      "id": "women_in_islam",
+      "name": "ইসলামে নারী",
+      "subtitle": "নারীদের অধিকার ও মর্যাদা",
+      "icon": "🌸",
+      "color": "0xFFE91E63",
+      "questionCount": 100,
+      "enabled": true
     }
   ]
 }
