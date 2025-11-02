@@ -80,6 +80,15 @@
       "color": "0xFFE91E63",
       "questionCount": 100,
       "enabled": true
+    },
+    {
+      "id": "islamic_geography",
+      "name": "ইসলামী ভূগোল",
+      "subtitle": "ইসলামের পবিত্র স্থান ও ভৌগোলিক জ্ঞান",
+      "icon": "🌍",
+      "color": "0xFF26A69A",
+      "questionCount": 100,
+      "enabled": true
     }
   ]
 }
