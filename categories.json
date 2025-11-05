@@ -98,6 +98,15 @@
       "color": "0xFF7E57C2",
       "questionCount": 100,
       "enabled": true
+    },
+    {
+      "id": "hajj_umrah",
+      "name": "হজ্জ ও উমরাহ",
+      "subtitle": "হজ্জ ও উমরাহর বিধিবিধান ও জ্ঞান",
+      "icon": "🕋",
+      "color": "0xFF795548",
+      "questionCount": 100,
+      "enabled": true
     }
   ]
 }
