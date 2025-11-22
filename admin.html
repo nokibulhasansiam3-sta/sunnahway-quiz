@@ -7,52 +7,26 @@
     <title>Quiz Admin</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-color: #8B5CF6;
-            /* Violet 500 */
-            --primary-hover: #7C3AED;
-            /* Violet 600 */
-            --secondary-color: #EC4899;
-            /* Pink 500 */
-            --bg-color: #F3F4F6;
-            /* Gray 100 */
-            --card-bg: #FFFFFF;
-            --text-primary: #111827;
-            /* Gray 900 */
-            --text-secondary: #6B7280;
-            /* Gray 500 */
-            --border-color: #E5E7EB;
-            /* Gray 200 */
-            --glass-bg: rgba(255, 255, 255, 0.95);
-            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            --primary-color: #6C63FF;
+            --secondary-color: #4CAF50;
+            --bg-color: #F4F6F9;
+            --text-color: #333;
+            --card-bg: #ffffff;
+            --border-radius: 16px;
         }
 
         body {
-            font-family: 'Hind Siliguri', 'Inter', sans-serif;
+            font-family: 'Outfit', sans-serif;
             background-color: var(--bg-color);
-            color: var(--text-primary);
-            min-height: 100vh;
-            padding: 30px;
-            background-image: radial-gradient(#E5E7EB 1px, transparent 1px);
-            background-size: 20px 20px;
-        }
-
-        /* Header */
-        .main-header {
-            background: var(--glass-bg);
             color: var(--text-color);
             padding: 20px;
             padding-bottom: 80px;
-            /* Space for floating button */
         }
 
-        /* Header Section - Not Sticky anymore */
+        /* Header Section */
         .page-header {
             background: rgba(255, 255, 255, 0.8);
             backdrop-filter: blur(10px);
@@ -127,13 +101,19 @@
         .question-item {
             background: var(--card-bg);
             border-radius: 12px;
-            padding: 15px 20px;
+            padding: 20px;
             margin-bottom: 15px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
             border: 1px solid rgba(0, 0, 0, 0.05);
             transition: all 0.2s ease;
             display: flex;
-            align-items: center;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .question-header {
+            display: flex;
+            align-items: flex-start;
             gap: 15px;
         }
 
@@ -143,12 +123,11 @@
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
         }
 
-        /* Compact Serial Box */
         .question-id-badge {
             background: #f0f2f5;
             color: #555;
-            font-size: 0.85rem;
-            font-weight: 600;
+            font-size: 0.9rem;
+            font-weight: 700;
             min-width: 35px;
             height: 35px;
             display: flex;
@@ -163,30 +142,78 @@
         }
 
         .question-text {
-            font-size: 1rem;
-            font-weight: 500;
-            margin-bottom: 4px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 10px;
             color: #2c3e50;
-            display: -webkit-box;
-            -webkit-line-clamp: 1;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
         }
 
-        .question-meta {
-            font-size: 0.8rem;
-            color: #888;
+        .options-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .option-badge {
+            padding: 8px 12px;
+            border-radius: 8px;
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            font-size: 0.9rem;
+            color: #495057;
+            display: flex;
+            align-items: center;
+        }
+
+        .option-badge.correct {
+            background-color: #d1e7dd;
+            border-color: #badbcc;
+            color: #0f5132;
+            font-weight: 500;
+        }
+
+        .option-badge .opt-label {
+            font-weight: 700;
+            margin-right: 8px;
+            opacity: 0.7;
+        }
+
+        .explanation-box {
+            background-color: #eef2ff;
+            border-left: 4px solid var(--primary-color);
+            padding: 10px 15px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            color: #4b5563;
+            margin-top: 10px;
+            display: none;
+            /* Hidden by default */
+        }
+
+        .explanation-box.show {
+            display: block;
+        }
+
+        .toggle-explanation {
+            font-size: 0.85rem;
+            color: var(--primary-color);
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            margin-top: 5px;
+        }
+
+        .toggle-explanation:hover {
+            text-decoration: underline;
         }
 
         .action-btn-group {
             display: flex;
             gap: 8px;
-            opacity: 0.6;
-            transition: opacity 0.2s;
-        }
-
-        .question-item:hover .action-btn-group {
-            opacity: 1;
+            margin-left: auto;
         }
 
         .btn-icon {
@@ -259,58 +286,22 @@
             box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.1);
             border-color: var(--primary-color);
         }
-
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-
-        ::-webkit-scrollbar-track {
-            background: #f1f1f1;
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: #c1c1c1;
-            border-radius: 4px;
-        }
-
-        ::-webkit-scrollbar-thumb:hover {
-            background: #a8a8a8;
-        }
-
-        .form-control:focus {
-            background-color: #FFFFFF;
-            border-color: var(--primary-color);
-            box-shadow: 0 0 0 4px rgba(139, 92, 246, 0.1);
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(10px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
     </style>
 </head>
 
 <body>
 
     <!-- Header -->
-    <div class="main-header">
+    <div class="page-header">
         <div>
-            <h2 id="pageTitle">Quiz Categories</h2>
+            <h2 class="page-title" id="pageTitle">Quiz Categories</h2>
             <small class="text-muted">Manage your quiz questions and sets</small>
         </div>
         <div class="d-flex gap-2">
             <button class="btn btn-outline-secondary" id="backBtn" style="display: none;" onclick="goBack()">
                 <i class="bi bi-arrow-left"></i> Back
             </button>
-            <button class="btn btn-primary" id="addBtn" onclick="showAddModal()">
+            <button class="btn btn-primary" id="addBtn" style="display: none;" onclick="showAddModal()">
                 <i class="bi bi-plus-lg"></i> New Question
             </button>
             <button class="btn btn-dark" onclick="pushToGit()">
@@ -325,7 +316,7 @@
     </div>
 
     <!-- Quiz List View -->
-    <div id="quizListView" class="quiz-list-view">
+    <div id="quizListView" style="display: none;">
         <div id="questionsContainer">
             <!-- Questions will be loaded here -->
         </div>
@@ -334,8 +325,8 @@
     <!-- Add/Edit Modal -->
     <div class="modal fade" id="questionModal" tabindex="-1">
         <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content" style="border-radius: 20px; border: none;">
-                <div class="modal-header border-0 pb-0">
+            <div class="modal-content">
+                <div class="modal-header">
                     <h5 class="modal-title fw-bold">Add Question</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
@@ -348,30 +339,30 @@
 
                         <div class="row g-3 mb-3">
                             <div class="col-md-6">
-                                <label class="form-label">Option A</label>
-                                <input type="text" class="form-control" id="optionA" required>
+                                <label class="form-label">Option 1 (A)</label>
+                                <input type="text" class="form-control" id="option0" required>
                             </div>
                             <div class="col-md-6">
-                                <label class="form-label">Option B</label>
-                                <input type="text" class="form-control" id="optionB" required>
+                                <label class="form-label">Option 2 (B)</label>
+                                <input type="text" class="form-control" id="option1" required>
                             </div>
                             <div class="col-md-6">
-                                <label class="form-label">Option C</label>
-                                <input type="text" class="form-control" id="optionC" required>
+                                <label class="form-label">Option 3 (C)</label>
+                                <input type="text" class="form-control" id="option2" required>
                             </div>
                             <div class="col-md-6">
-                                <label class="form-label">Option D</label>
-                                <input type="text" class="form-control" id="optionD" required>
+                                <label class="form-label">Option 4 (D)</label>
+                                <input type="text" class="form-control" id="option3" required>
                             </div>
                         </div>
 
                         <div class="mb-3">
                             <label class="form-label fw-bold text-success">Correct Answer</label>
                             <select class="form-select" id="correctAnswer" required>
-                                <option value="A">Option A</option>
-                                <option value="B">Option B</option>
-                                <option value="C">Option C</option>
-                                <option value="D">Option D</option>
+                                <option value="0">Option 1 (A)</option>
+                                <option value="1">Option 2 (B)</option>
+                                <option value="2">Option 3 (C)</option>
+                                <option value="3">Option 4 (D)</option>
                             </select>
                         </div>
 
@@ -402,7 +393,6 @@
             try {
                 const res = await fetch('/api/categories');
                 const data = await res.json();
-                // Handle both array and object structure
                 categories = Array.isArray(data) ? data : (data.categories || []);
                 renderCategories();
             } catch (e) {
@@ -423,7 +413,6 @@
             categories.forEach(cat => {
                 const card = document.createElement('div');
                 card.className = 'category-card';
-                // Construct filename from ID if fileName is missing
                 const fileName = cat.fileName || `${cat.id}.json`;
 
                 card.onclick = () => openCategory({ ...cat, fileName });
@@ -455,7 +444,6 @@
             try {
                 const res = await fetch(`/api/quiz/${cat.fileName}`);
                 const data = await res.json();
-                // Handle both array and object structure
                 currentQuestions = Array.isArray(data) ? data : (data.questions || []);
                 renderQuestions();
 
@@ -471,7 +459,7 @@
         }
 
         function renderQuestions() {
-            const container = document.getElementById('questionsContainer'); // Keep original container
+            const container = document.getElementById('questionsContainer');
             container.innerHTML = '';
 
             if (currentQuestions.length === 0) {
@@ -485,30 +473,70 @@
             }
 
             currentQuestions.forEach((q, index) => {
-                const card = document.createElement('div');
-                card.className = 'question-card';
-                card.innerHTML = `
-                    <div class="d-flex justify-content-between align-items-start mb-3">
-                        <h5 class="fw-bold mb-0">Q${index + 1}. ${q.question}</h5>
-                        <div>
-                            <button class="btn btn-sm btn-outline-primary me-1" onclick="editQuestion(${index})">
-                                <i class="bi bi-pencil"></i>
+                const item = document.createElement('div');
+                item.className = 'question-item';
+
+                // Options HTML
+                let optionsHtml = '<div class="options-grid">';
+                if (q.options && Array.isArray(q.options)) {
+                    q.options.forEach((opt, i) => {
+                        // Check if this option is correct (handle both string 'A' and index 0)
+                        let isCorrect = false;
+                        if (typeof q.correctAnswer === 'number') {
+                            isCorrect = i === q.correctAnswer;
+                        } else if (typeof q.correctAnswer === 'string') {
+                            // Map A,B,C,D to 0,1,2,3
+                            const map = { 'A': 0, 'B': 1, 'C': 2, 'D': 3 };
+                            isCorrect = i === map[q.correctAnswer] || q.correctAnswer === opt;
+                        }
+
+                        const labels = ['A', 'B', 'C', 'D'];
+                        optionsHtml += `
+                            <div class="option-badge ${isCorrect ? 'correct' : ''}">
+                                <span class="opt-label">${labels[i]}.</span> ${opt}
+                            </div>
+                        `;
+                    });
+                }
+                optionsHtml += '</div>';
+
+                item.innerHTML = `
+                    <div class="question-header">
+                        <div class="question-id-badge">${q.id || index + 1}</div>
+                        <div class="question-content">
+                            <div class="question-text">${q.question}</div>
+                            ${optionsHtml}
+                            
+                            ${q.explanation ? `
+                                <div class="toggle-explanation" onclick="toggleExplanation(${index})">
+                                    <i class="bi bi-info-circle"></i> Show Explanation
+                                </div>
+                                <div class="explanation-box" id="exp-${index}">
+                                    <strong>Explanation:</strong> ${q.explanation}
+                                </div>
+                            ` : ''}
+                        </div>
+                        <div class="action-btn-group">
+                            <button class="btn btn-light btn-icon text-primary" onclick="editQuestion(${index})" title="Edit">
+                                <i class="bi bi-pencil-square"></i>
                             </button>
-                            <button class="btn btn-sm btn-outline-danger" onclick="deleteQuestion(${index})">
+                            <button class="btn btn-light btn-icon text-danger" onclick="deleteQuestion(${index})" title="Delete">
                                 <i class="bi bi-trash"></i>
                             </button>
                         </div>
                     </div>
-                    <div class="mb-3">
-                        <span class="option-badge ${q.correct === 'A' ? 'correct' : ''}">A. ${q.options[0]}</span>
-                        <span class="option-badge ${q.correct === 'B' ? 'correct' : ''}">B. ${q.options[1]}</span>
-                        <span class="option-badge ${q.correct === 'C' ? 'correct' : ''}">C. ${q.options[2]}</span>
-                        <span class="option-badge ${q.correct === 'D' ? 'correct' : ''}">D. ${q.options[3]}</span>
-                    </div>
-                    ${q.explanation ? `<div class="alert alert-light border mb-0"><small><strong>Explanation:</strong> ${q.explanation}</small></div>` : ''}
                 `;
-                container.appendChild(card);
+                container.appendChild(item);
             });
+        }
+
+        function toggleExplanation(index) {
+            const el = document.getElementById(`exp-${index}`);
+            if (el.style.display === 'block') {
+                el.style.display = 'none';
+            } else {
+                el.style.display = 'block';
+            }
         }
 
         function goBack() {
@@ -530,11 +558,21 @@
             editingIndex = index;
             const q = currentQuestions[index];
             document.getElementById('questionText').value = q.question;
-            document.getElementById('optionA').value = q.options[0];
-            document.getElementById('optionB').value = q.options[1];
-            document.getElementById('optionC').value = q.options[2];
-            document.getElementById('optionD').value = q.options[3];
-            document.getElementById('correctAnswer').value = q.correct;
+            document.getElementById('option0').value = q.options[0] || '';
+            document.getElementById('option1').value = q.options[1] || '';
+            document.getElementById('option2').value = q.options[2] || '';
+            document.getElementById('option3').value = q.options[3] || '';
+
+            // Handle correct answer selection
+            let correctVal = 0;
+            if (typeof q.correctAnswer === 'number') {
+                correctVal = q.correctAnswer;
+            } else if (typeof q.correctAnswer === 'string') {
+                const map = { 'A': 0, 'B': 1, 'C': 2, 'D': 3 };
+                correctVal = map[q.correctAnswer] !== undefined ? map[q.correctAnswer] : 0;
+            }
+            document.getElementById('correctAnswer').value = correctVal;
+
             document.getElementById('explanation').value = q.explanation || '';
 
             document.querySelector('.modal-title').innerText = 'Edit Question';
@@ -543,15 +581,17 @@
 
         async function saveQuestion() {
             const question = {
+                id: editingIndex === -1 ? (currentQuestions.length + 1) : currentQuestions[editingIndex].id,
                 question: document.getElementById('questionText').value,
                 options: [
-                    document.getElementById('optionA').value,
-                    document.getElementById('optionB').value,
-                    document.getElementById('optionC').value,
-                    document.getElementById('optionD').value
+                    document.getElementById('option0').value,
+                    document.getElementById('option1').value,
+                    document.getElementById('option2').value,
+                    document.getElementById('option3').value
                 ],
-                correct: document.getElementById('correctAnswer').value,
-                explanation: document.getElementById('explanation').value
+                correctAnswer: parseInt(document.getElementById('correctAnswer').value),
+                explanation: document.getElementById('explanation').value,
+                difficulty: 'Medium' // Default
             };
 
             if (editingIndex === -1) {
@@ -570,14 +610,10 @@
 
                 modal.hide();
                 renderQuestions();
-                Swal.fire({
-                    icon: 'success',
-                    title: 'Saved!',
-                    toast: true,
-                    position: 'top-end',
-                    showConfirmButton: false,
-                    timer: 1500
-                });
+
+                // Auto Push Silently
+                pushToGit(true);
+
             } catch (e) {
                 Swal.fire('Error', 'Failed to save question', 'error');
             }
@@ -602,31 +638,96 @@
                         body: JSON.stringify(currentQuestions)
                     });
                     renderQuestions();
-                    Swal.fire('Deleted!', 'Question has been deleted.', 'success');
+
+                    // Auto Push Silently
+                    pushToGit(true);
+
                 } catch (e) {
                     Swal.fire('Error', 'Failed to delete question', 'error');
                 }
             }
         }
 
-        async function pushToGit() {
-            Swal.fire({
-                title: 'Pushing to GitHub...',
-                didOpen: () => Swal.showLoading()
-            });
+        async function pushToGit(silent = false) {
+            if (!silent) {
+                Swal.fire({
+                    title: 'Pushing to GitHub...',
+                    didOpen: () => Swal.showLoading()
+                });
+            } else {
+                // Show a small toast for auto-save
+                const Toast = Swal.mixin({
+                    toast: true,
+                    position: 'bottom-end',
+                    showConfirmButton: false,
+                    timer: 3000,
+                    timerProgressBar: true,
+                    didOpen: (toast) => {
+                        toast.addEventListener('mouseenter', Swal.stopTimer)
+                        toast.addEventListener('mouseleave', Swal.resumeTimer)
+                    }
+                });
+
+                Toast.fire({
+                    icon: 'info',
+                    title: 'Saving & Pushing changes...'
+                });
+            }
 
             try {
                 const res = await fetch('/api/push', { method: 'POST' });
                 const data = await res.json();
+
                 if (data.success) {
-                    Swal.fire('Success', 'Changes pushed to GitHub!', 'success');
+                    if (!silent) {
+                        Swal.fire('Success', 'Changes pushed to GitHub!', 'success');
+                    } else {
+                        // Update toast to success
+                        Swal.mixin({
+                            toast: true,
+                            position: 'bottom-end',
+                            showConfirmButton: false,
+                            timer: 2000
+                        }).fire({
+                            icon: 'success',
+                            title: 'Saved & Pushed successfully!'
+                        });
+                    }
                 } else {
                     throw new Error(data.error);
                 }
             } catch (e) {
-                Swal.fire('Error', 'Failed to push changes: ' + e.message, 'error');
+                if (!silent) {
+                    Swal.fire('Error', 'Failed to push changes: ' + e.message, 'error');
+                } else {
+                    console.error('Auto-push failed:', e);
+                    Swal.mixin({
+                        toast: true,
+                        position: 'bottom-end',
+                        showConfirmButton: false,
+                        timer: 3000
+                    }).fire({
+                        icon: 'warning',
+                        title: 'Saved locally, but push failed.'
+                    });
+                }
             }
         }
+
+        // Scroll to Top Logic
+        const scrollTopBtn = document.createElement('button');
+        scrollTopBtn.id = 'scrollTopBtn';
+        scrollTopBtn.innerHTML = '<i class="bi bi-arrow-up"></i>';
+        scrollTopBtn.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+        document.body.appendChild(scrollTopBtn);
+
+        window.onscroll = function () {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                scrollTopBtn.style.display = "flex";
+            } else {
+                scrollTopBtn.style.display = "none";
+            }
+        };
 
         // Initialize
         loadCategories();
