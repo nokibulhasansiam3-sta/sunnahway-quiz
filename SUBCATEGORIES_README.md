@@ -9,10 +9,15 @@ sunnahway-quiz/
 ├── categories.json                 # Main categories list with subcategories
 │
 ├── sirat_biography/               # সীরাত ও জীবনী
-│   ├── sirat_makkah.json         # মক্কী জীবন
-│   ├── sirat_madinah.json        # মাদানী জীবন
-│   ├── sirat_battles.json        # যুদ্ধসমূহ
-│   └── sirat_miracles.json       # মুজিযা ও নিদর্শন
+│   ├── sirat_childhood.json          # জন্ম ও শৈশব
+│   ├── sirat_youth_marriage.json     # যৌবন ও বিবাহ
+│   ├── sirat_prophethood.json        # নবুওয়াত প্রাপ্তি
+│   ├── sirat_battles.json            # যুদ্ধ ও সন্ধি
+│   ├── sirat_hijrah_madinah.json     # হিজরত ও মদীনা
+│   ├── sirat_miracles.json           # মুজিযা ও নিদর্শন
+│   ├── sirat_family_companions.json  # পরিবার ও সাহাবা
+│   ├── sirat_character.json          # চরিত্র ও আখলাক
+│   └── sirat_farewell_death.json     # বিদায় হজ্জ ও ওফাত
 │
 ├── khulafaye_rashedin/           # খুলাফায়ে রাশেদীন
 │   ├── khalifa_abu_bakr.json     # আবু বকর (রা.)

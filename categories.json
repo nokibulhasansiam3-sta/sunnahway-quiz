@@ -28,27 +28,57 @@
       "enabled": true,
       "subcategories": [
         {
-          "id": "sirat_makkah",
-          "name": "মক্কী জীবন",
-          "subtitle": "নবুওয়াত প্রাপ্তি থেকে হিজরত পর্যন্ত",
+          "id": "sirat_childhood",
+          "name": "জন্ম ও শৈশব",
+          "subtitle": "জন্ম, শৈশব ও যৌবনকাল",
           "enabled": true
         },
         {
-          "id": "sirat_madinah",
-          "name": "মাদানী জীবন",
-          "subtitle": "হিজরত থেকে ওফাত পর্যন্ত",
+          "id": "sirat_youth_marriage",
+          "name": "যৌবন ও বিবাহ",
+          "subtitle": "ব্যবসা, আল-আমিন ও বিবাহ",
+          "enabled": true
+        },
+        {
+          "id": "sirat_prophethood",
+          "name": "নবুওয়াত প্রাপ্তি",
+          "subtitle": "হেরা গুহা ও ইসলাম প্রচার",
           "enabled": true
         },
         {
           "id": "sirat_battles",
-          "name": "যুদ্ধসমূহ",
-          "subtitle": "বদর, উহুদ, খন্দক ও অন্যান্য",
+          "name": "যুদ্ধ ও সন্ধি",
+          "subtitle": "বদর, উহুদ, খন্দক ও মক্কা বিজয়",
+          "enabled": true
+        },
+        {
+          "id": "sirat_hijrah_madinah",
+          "name": "হিজরত ও মদীনা",
+          "subtitle": "হিজরত ও মদীনার জীবন",
           "enabled": true
         },
         {
           "id": "sirat_miracles",
           "name": "মুজিযা ও নিদর্শন",
-          "subtitle": "নবীজির অলৌকিক ঘটনা",
+          "subtitle": "মিরাজ ও অলৌকিক ঘটনা",
+          "enabled": true
+        },
+        {
+          "id": "sirat_family_companions",
+          "name": "পরিবার ও সাহাবা",
+          "subtitle": "স্ত্রী, সন্তান ও সাহাবাগণ",
+          "enabled": true
+        },
+        {
+          "id": "sirat_character",
+          "name": "চরিত্র ও আখলাক",
+          "subtitle": "নৈতিকতা ও দৈনন্দিন জীবন",
+          "enabled": true
+        },
+        {
+          "id": "sirat_farewell_death",
+          "name": "বিদায় হজ্জ ও ওফাত",
+          "subtitle": "বিদায় হজ্জ ও জীবনাবসান",
           "enabled": true
         }
       ]
