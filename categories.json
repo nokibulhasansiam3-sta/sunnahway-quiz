@@ -26,6 +26,8 @@
       "color": "0xFFFF9800",
       "questionCount": 100,
       "enabled": true,
+      "selection_title": "জীবনকাল নির্বাচন করুন",
+      "all_option_subtitle": "সকল সময়কাল থেকে প্রশ্ন",
       "subcategories": [
         {
           "id": "sirat_childhood",
@@ -91,6 +93,8 @@
       "color": "0xFF9C27B0",
       "questionCount": 100,
       "enabled": true,
+      "selection_title": "খলিফা নির্বাচন করুন",
+      "all_option_subtitle": "সকল খলিফা সংক্রান্ত প্রশ্ন",
       "subcategories": [
         {
           "id": "khalifa_abu_bakr",
@@ -135,6 +139,8 @@
       "color": "0xFF90A4AE",
       "questionCount": 300,
       "enabled": true,
+      "selection_title": "যুগ নির্বাচন করুন",
+      "all_option_subtitle": "সকল যুগ থেকে প্রশ্ন",
       "subcategories": [
         {
           "id": "history_jaheli",
@@ -188,7 +194,21 @@
       "color": "0xFF00BCD4",
       "questionCount": 100,
       "enabled": true,
+      "selection_title": "বিষয় নির্বাচন করুন",
+      "all_option_subtitle": "সকল বিষয় থেকে প্রশ্ন",
       "subcategories": [
+        {
+          "id": "fiqh_principles",
+          "name": "উসূলুল ফিকহ",
+          "subtitle": "ফিকহের মূলনীতি ও পরিভাষা",
+          "enabled": true
+        },
+        {
+          "id": "fiqh_taharat",
+          "name": "পবিত্রতা ও ওজু",
+          "subtitle": "ওজু, গোসল ও তাদের বিধান",
+          "enabled": true
+        },
         {
           "id": "fiqh_salah",
           "name": "নামাজের বিধান",
@@ -208,9 +228,63 @@
           "enabled": true
         },
         {
+          "id": "fiqh_hajj",
+          "name": "হজ ও ওমরাহ",
+          "subtitle": "হজ ও ওমরার নিয়মাবলী",
+          "enabled": true
+        },
+        {
           "id": "fiqh_marriage",
-          "name": "বিবাহ ও পারিবারিক বিধান",
+          "name": "বিবাহ ও পরিবার",
           "subtitle": "বিবাহ, তালাক ও পারিবারিক আইন",
+          "enabled": true
+        },
+        {
+          "id": "fiqh_muamalat",
+          "name": "ব্যবসা ও লেনদেন",
+          "subtitle": "ক্রয়-বিক্রয় ও হালাল উপার্জন",
+          "enabled": true
+        },
+        {
+          "id": "fiqh_inheritance",
+          "name": "উত্তরাধিকার (ফারায়েজ)",
+          "subtitle": "সম্পদ বণ্টন ও মিরাস আইন",
+          "enabled": true
+        },
+        {
+          "id": "fiqh_judiciary",
+          "name": "বিচার ও দণ্ডবিধি",
+          "subtitle": "ইসলামী বিচার ব্যবস্থা ও শাস্তি",
+          "enabled": true
+        },
+        {
+          "id": "fiqh_oath",
+          "name": "কসম ও মানত",
+          "subtitle": "শপথ ও কাফফারা আদায়ের বিধান",
+          "enabled": true
+        },
+        {
+          "id": "fiqh_slaughter",
+          "name": "শিকার ও জবাই",
+          "subtitle": "পশু জবাই ও আকিদাহ",
+          "enabled": true
+        },
+        {
+          "id": "fiqh_halal_haram",
+          "name": "হালাল ও হারাম",
+          "subtitle": "খাদ্য, পোশাক ও জীবনাচার",
+          "enabled": true
+        },
+        {
+          "id": "fiqh_contemporary",
+          "name": "আধুনিক মাসায়েল",
+          "subtitle": "ব্যাংকিং, বিমা ও সমসাময়িক বিষয়",
+          "enabled": true
+        },
+        {
+          "id": "fiqh_janazah",
+          "name": "মৃত্যু ও জানাজা",
+          "subtitle": "কাফন, দাফন ও জানাজার মাসায়েল",
           "enabled": true
         }
       ]
