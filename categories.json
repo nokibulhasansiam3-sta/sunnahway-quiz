@@ -143,87 +143,105 @@
       "all_option_subtitle": "সকল যুগ থেকে প্রশ্ন",
       "subcategories": [
         {
-          "id": "history_prophets",
-          "name": "নবীদের যুগ (পূর্ববর্তী)",
-          "subtitle": "আদম (আ.) থেকে ঈসা (আ.) পর্যন্ত",
+          "id": "era_01_early_prophets",
+          "name": "আদি নবুয়ত যুগ (আদম আ. থেকে নূহ আ.)",
+          "subtitle": "সৃষ্টির শুরু থেকে মহাপ্লাবন পর্যন্ত",
           "enabled": true
         },
         {
-          "id": "history_jaheli",
-          "name": "জাহেলি যুগ",
-          "subtitle": "ইসলাম পূর্ব আরবের অবস্থা",
+          "id": "era_02_ibrahim_bani_israel",
+          "name": "ইব্রাহিমী ও বনী ইসরাঈল যুগ",
+          "subtitle": "ইব্রাহিম (আ.) থেকে ঈসা (আ.) পর্যন্ত",
           "enabled": true
         },
         {
-          "id": "history_nabawi",
-          "name": "নবুবী যুগ (রাসূল সা.)",
-          "subtitle": "মক্কা ও মদীনার জীবন (৫৭০-৬৩২)",
+          "id": "era_03_jahiliyyah",
+          "name": "আইয়ামে জাহেলিয়াত",
+          "subtitle": "ঈসা (আ.) ও মুহাম্মদ (সা.)-এর মধ্যবর্তী সময়",
           "enabled": true
         },
         {
-          "id": "history_khulafa",
-          "name": "খুলাফায়ে রাশেদীন",
-          "subtitle": "চার খলিফার শাসনামল (৬৩২-৬৬১)",
+          "id": "era_04_prophethood",
+          "name": "নবুয়তের স্বর্ণযুগ (রাসূলুল্লাহ সা.-এর কাল)",
+          "subtitle": "৬১০ খ্রি. – ৬৩২ খ্রি.",
           "enabled": true
         },
         {
-          "id": "history_umayyad",
-          "name": "উমাইয়া খিলাফত",
-          "subtitle": "দামেস্ক কেন্দ্রিক শাসন (৬৬১-৭৫০)",
+          "id": "era_05_khulafa_rashideen",
+          "name": "খুলাফায়ে রাশেদীনের যুগ",
+          "subtitle": "৬৩২ খ্রি. – ৬৬১ খ্রি.",
           "enabled": true
         },
         {
-          "id": "history_abbasid",
-          "name": "আব্বাসীয় খিলাফত",
-          "subtitle": "মুসলিম স্বর্ণযুগ ও বাগদাদ (৭৫০-১২৫৮)",
+          "id": "era_06_umayyad",
+          "name": "উমাইয়া খিলাফত (দামেস্ক)",
+          "subtitle": "৬৬১ খ্রি. – ৭৫০ খ্রি.",
           "enabled": true
         },
         {
-          "id": "history_andalusia",
-          "name": "আন্দালুসিয়া (স্পেন)",
-          "subtitle": "ইউরোপে মুসলিম শাসন (৭১১-১৪৯২)",
+          "id": "era_07_abbasid",
+          "name": "আব্বাসীয় খিলাফত (বাগদাদ)",
+          "subtitle": "৭৫০ খ্রি. – ১২৫৮ খ্রি.",
           "enabled": true
         },
         {
-          "id": "history_crusades_ayyubid",
-          "name": "ক্রুসেড ও আইয়ুবী সালতানাত",
-          "subtitle": "সালাহউদ্দিন আইয়ুবী ও বাইতুল মাকদিস",
+          "id": "era_08_andalusia",
+          "name": "স্পেনের উমাইয়া শাসন (আন্দালুসিয়া)",
+          "subtitle": "৭১১ খ্রি. – ১৪৯২ খ্রি.",
           "enabled": true
         },
         {
-          "id": "history_mamluk",
-          "name": "মামলুক সালতানাত",
-          "subtitle": "মিশর ও সিরিয়ার পরাশক্তি (১২৫০-১৫১৭)",
+          "id": "era_09_fatimid",
+          "name": "ফাতেমীয় খিলাফত",
+          "subtitle": "৯০৯ খ্রি. – ১১৭১ খ্রি.",
           "enabled": true
         },
         {
-          "id": "history_ottoman",
-          "name": "উসমানীয় সাম্রাজ্য",
-          "subtitle": "তিন মহাদেশের খেলাফত (১২৯৯-১৯২৪)",
+          "id": "era_10_seljuk_ayyubid",
+          "name": "সেলজুক ও আইয়ুবীয় যুগ (ক্রুসেড বিরোধী কাল)",
+          "subtitle": "১০৩৭ খ্রি. – ১২৫০ খ্রি.",
           "enabled": true
         },
         {
-          "id": "history_mughal_safavid",
-          "name": "মোগল ও সাফাভি সাম্রাজ্য",
-          "subtitle": "ভারত ও পারস্যের মুসলিম শাসন",
+          "id": "era_11_mamluk",
+          "name": "মামলুক সুলতানাত",
+          "subtitle": "১২৫০ খ্রি. – ১৫১৭ খ্রি.",
           "enabled": true
         },
         {
-          "id": "history_colonial",
-          "name": "ঔপনিবেশিক যুগ",
-          "subtitle": "ব্রিটিশ ও ইউরোপীয় শাসনবিরোধী সংগ্রাম",
+          "id": "era_12_post_mongol",
+          "name": "মোঙ্গল পরবর্তী আঞ্চলিক সাম্রাজ্য",
+          "subtitle": "১২৫৮ খ্রি. – ১৫০০ খ্রি.",
           "enabled": true
         },
         {
-          "id": "history_modern",
-          "name": "আধুনিক মুসলিম বিশ্ব",
-          "subtitle": "১৯২৪ পরবর্তী ইতিহাস ও বর্তমান অবস্থা",
+          "id": "era_13_ottoman",
+          "name": "উসমানীয় খিলাফত (অটোমান সাম্রাজ্য)",
+          "subtitle": "১২৯৯ খ্রি. – ১৯২৪ খ্রি.",
           "enabled": true
         },
         {
-          "id": "history_bangladesh",
-          "name": "বাংলাদেশে ইসলাম",
-          "subtitle": "বাংলায় ইসলামের আগমন ও বিকাশ",
+          "id": "era_14_safavid",
+          "name": "সাফাবীয় সাম্রাজ্য (ইরান)",
+          "subtitle": "১৫০১ খ্রি. – ১৭৩৬ খ্রি.",
+          "enabled": true
+        },
+        {
+          "id": "era_15_mughal",
+          "name": "মুঘল সাম্রাজ্য (ভারত)",
+          "subtitle": "১৫২৬ খ্রি. – ১৮৫৮ খ্রি.",
+          "enabled": true
+        },
+        {
+          "id": "era_16_colonial",
+          "name": "ঔপনিবেশিক শাসন ও পরাধীনতার যুগ",
+          "subtitle": "১৮শ শতাব্দী – ২০শ শতাব্দীর মাঝামাঝি",
+          "enabled": true
+        },
+        {
+          "id": "era_17_modern",
+          "name": "আধুনিক ও স্বাধীন রাষ্ট্রসমূহের যুগ",
+          "subtitle": "১৯২৪ খ্রি. – বর্তমান",
           "enabled": true
         }
       ]
