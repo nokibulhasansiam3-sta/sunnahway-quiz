@@ -34,63 +34,63 @@
           "name": "জন্ম ও শৈশব",
           "subtitle": "জন্ম, শৈশব ও যৌবনকাল",
           "enabled": true,
-          "color": "0xFFFF9800"
+          "color": "0xFF90A4AE"
         },
         {
           "id": "sirat_youth_marriage",
           "name": "যৌবন ও বিবাহ",
           "subtitle": "ব্যবসা, আল-আমিন ও বিবাহ",
           "enabled": true,
-          "color": "0xFFFF9800"
+          "color": "0xFF90A4AE"
         },
         {
           "id": "sirat_prophethood",
           "name": "নবুওয়াত প্রাপ্তি",
           "subtitle": "হেরা গুহা ও ইসলাম প্রচার",
           "enabled": true,
-          "color": "0xFFFF9800"
+          "color": "0xFF90A4AE"
         },
         {
           "id": "sirat_battles",
           "name": "যুদ্ধ ও সন্ধি",
           "subtitle": "বদর, উহুদ, খন্দক ও মক্কা বিজয়",
           "enabled": true,
-          "color": "0xFFFF9800"
+          "color": "0xFF90A4AE"
         },
         {
           "id": "sirat_hijrah_madinah",
           "name": "হিজরত ও মদীনা",
           "subtitle": "হিজরত ও মদীনার জীবন",
           "enabled": true,
-          "color": "0xFFFF9800"
+          "color": "0xFF90A4AE"
         },
         {
           "id": "sirat_miracles",
           "name": "মুজিযা ও নিদর্শন",
           "subtitle": "মিরাজ ও অলৌকিক ঘটনা",
           "enabled": true,
-          "color": "0xFFFF9800"
+          "color": "0xFF90A4AE"
         },
         {
           "id": "sirat_family_companions",
           "name": "পরিবার ও সাহাবা",
           "subtitle": "স্ত্রী, সন্তান ও সাহাবাগণ",
           "enabled": true,
-          "color": "0xFFFF9800"
+          "color": "0xFF90A4AE"
         },
         {
           "id": "sirat_character",
           "name": "চরিত্র ও আখলাক",
           "subtitle": "নৈতিকতা ও দৈনন্দিন জীবন",
           "enabled": true,
-          "color": "0xFFFF9800"
+          "color": "0xFF90A4AE"
         },
         {
           "id": "sirat_farewell_death",
           "name": "বিদায় হজ্জ ও ওফাত",
           "subtitle": "বিদায় হজ্জ ও জীবনাবসান",
           "enabled": true,
-          "color": "0xFFFF9800"
+          "color": "0xFF90A4AE"
         }
       ]
     },
@@ -110,28 +110,28 @@
           "name": "আবু বকর (রা.)",
           "subtitle": "প্রথম খলিফার শাসনামল",
           "enabled": true,
-          "color": "0xFF9C27B0"
+          "color": "0xFF90A4AE"
         },
         {
           "id": "khalifa_umar",
           "name": "উমর (রা.)",
           "subtitle": "দ্বিতীয় খলিফার শাসনামল",
           "enabled": true,
-          "color": "0xFF9C27B0"
+          "color": "0xFF90A4AE"
         },
         {
           "id": "khalifa_uthman",
           "name": "উসমান (রা.)",
           "subtitle": "তৃতীয় খলিফার শাসনামল",
           "enabled": true,
-          "color": "0xFF9C27B0"
+          "color": "0xFF90A4AE"
         },
         {
           "id": "khalifa_ali",
           "name": "আলী (রা.)",
           "subtitle": "চতুর্থ খলিফার শাসনামল",
           "enabled": true,
-          "color": "0xFF9C27B0"
+          "color": "0xFF90A4AE"
         }
       ]
     },
@@ -292,7 +292,7 @@
           "name": "উসূলুল ফিকহ",
           "subtitle": "ফিকহের মূলনীতি ও পরিভাষা",
           "icon": "⚖️",
-          "color": "0xFF00BCD4",
+          "color": "0xFF90A4AE",
           "enabled": true
         },
         {
@@ -300,7 +300,7 @@
           "name": "পবিত্রতা ও ওজু",
           "subtitle": "ওজু, গোসল ও তাদের বিধান",
           "icon": "⚖️",
-          "color": "0xFF00BCD4",
+          "color": "0xFF90A4AE",
           "enabled": true
         },
         {
@@ -308,7 +308,7 @@
           "name": "নামাজের বিধান",
           "subtitle": "নামাজের নিয়ম ও মাসায়েল",
           "icon": "⚖️",
-          "color": "0xFF00BCD4",
+          "color": "0xFF90A4AE",
           "enabled": true
         },
         {
@@ -316,7 +316,7 @@
           "name": "যাকাতের বিধান",
           "subtitle": "যাকাতের নিয়ম ও হিসাব",
           "icon": "⚖️",
-          "color": "0xFF00BCD4",
+          "color": "0xFF90A4AE",
           "enabled": true
         },
         {
@@ -324,7 +324,7 @@
           "name": "রোজার বিধান",
           "subtitle": "রোজার নিয়ম ও মাসায়েল",
           "icon": "⚖️",
-          "color": "0xFF00BCD4",
+          "color": "0xFF90A4AE",
           "enabled": true
         },
         {
@@ -332,7 +332,7 @@
           "name": "হজ ও ওমরাহ",
           "subtitle": "হজ ও ওমরার নিয়মাবলী",
           "icon": "⚖️",
-          "color": "0xFF00BCD4",
+          "color": "0xFF90A4AE",
           "enabled": true
         },
         {
@@ -340,7 +340,7 @@
           "name": "বিবাহ ও পরিবার",
           "subtitle": "বিবাহ, তালাক ও পারিবারিক আইন",
           "icon": "⚖️",
-          "color": "0xFF00BCD4",
+          "color": "0xFF90A4AE",
           "enabled": true
         },
         {
@@ -348,7 +348,7 @@
           "name": "ব্যবসা ও লেনদেন",
           "subtitle": "ক্রয়-বিক্রয় ও হালাল উপার্জন",
           "icon": "⚖️",
-          "color": "0xFF00BCD4",
+          "color": "0xFF90A4AE",
           "enabled": true
         },
         {
@@ -356,7 +356,7 @@
           "name": "উত্তরাধিকার (ফারায়েজ)",
           "subtitle": "সম্পদ বণ্টন ও মিরাস আইন",
           "icon": "⚖️",
-          "color": "0xFF00BCD4",
+          "color": "0xFF90A4AE",
           "enabled": true
         },
         {
@@ -364,7 +364,7 @@
           "name": "বিচার ও দণ্ডবিধি",
           "subtitle": "ইসলামী বিচার ব্যবস্থা ও শাস্তি",
           "icon": "⚖️",
-          "color": "0xFF00BCD4",
+          "color": "0xFF90A4AE",
           "enabled": true
         },
         {
@@ -372,7 +372,7 @@
           "name": "কসম ও মানত",
           "subtitle": "শপথ ও কাফফারা আদায়ের বিধান",
           "icon": "⚖️",
-          "color": "0xFF00BCD4",
+          "color": "0xFF90A4AE",
           "enabled": true
         },
         {
@@ -380,7 +380,7 @@
           "name": "শিকার ও জবাই",
           "subtitle": "পশু জবাই ও আকিদাহ",
           "icon": "⚖️",
-          "color": "0xFF00BCD4",
+          "color": "0xFF90A4AE",
           "enabled": true
         },
         {
@@ -388,7 +388,7 @@
           "name": "হালাল ও হারাম",
           "subtitle": "খাদ্য, পোশাক ও জীবনাচার",
           "icon": "⚖️",
-          "color": "0xFF00BCD4",
+          "color": "0xFF90A4AE",
           "enabled": true
         },
         {
@@ -396,7 +396,7 @@
           "name": "আধুনিক মাসায়েল",
           "subtitle": "ব্যাংকিং, বিমা ও সমসাময়িক বিষয়",
           "icon": "⚖️",
-          "color": "0xFF00BCD4",
+          "color": "0xFF90A4AE",
           "enabled": true
         },
         {
@@ -404,7 +404,7 @@
           "name": "মৃত্যু ও জানাজা",
           "subtitle": "কাফন, দাফন ও জানাজার মাসায়েল",
           "icon": "⚖️",
-          "color": "0xFF00BCD4",
+          "color": "0xFF90A4AE",
           "enabled": true
         }
       ]
