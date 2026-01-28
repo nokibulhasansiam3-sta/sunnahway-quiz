@@ -143,6 +143,12 @@
       "all_option_subtitle": "সকল যুগ থেকে প্রশ্ন",
       "subcategories": [
         {
+          "id": "history_prophets",
+          "name": "নবীদের যুগ (পূর্ববর্তী)",
+          "subtitle": "আদম (আ.) থেকে ঈসা (আ.) পর্যন্ত",
+          "enabled": true
+        },
+        {
           "id": "history_jaheli",
           "name": "জাহেলি যুগ",
           "subtitle": "ইসলাম পূর্ব আরবের অবস্থা",
@@ -150,38 +156,74 @@
         },
         {
           "id": "history_nabawi",
-          "name": "নবুবী যুগ",
-          "subtitle": "নবী (সা.) এর সময়কাল",
+          "name": "নবুবী যুগ (রাসূল সা.)",
+          "subtitle": "মক্কা ও মদীনার জীবন (৫৭০-৬৩২)",
           "enabled": true
         },
         {
           "id": "history_khulafa",
-          "name": "খুলাফায়ে রাশেদীন যুগ",
-          "subtitle": "চার খলিফার শাসনামল",
+          "name": "খুলাফায়ে রাশেদীন",
+          "subtitle": "চার খলিফার শাসনামল (৬৩২-৬৬১)",
           "enabled": true
         },
         {
           "id": "history_umayyad",
           "name": "উমাইয়া খিলাফত",
-          "subtitle": "উমাইয়া বংশের শাসন (৬৬১-৭৫০)",
+          "subtitle": "দামেস্ক কেন্দ্রিক শাসন (৬৬১-৭৫০)",
           "enabled": true
         },
         {
           "id": "history_abbasid",
           "name": "আব্বাসীয় খিলাফত",
-          "subtitle": "আব্বাসীয় বংশের শাসন (৭৫০-১২৫৮)",
-          "enabled": true
-        },
-        {
-          "id": "history_ottoman",
-          "name": "উসমানীয় খিলাফত",
-          "subtitle": "উসমানীয় সাম্রাজ্য (১২৯৯-১৯২২)",
+          "subtitle": "মুসলিম স্বর্ণযুগ ও বাগদাদ (৭৫০-১২৫৮)",
           "enabled": true
         },
         {
           "id": "history_andalusia",
-          "name": "আন্দালুসিয়া",
-          "subtitle": "স্পেনে মুসলিম শাসন",
+          "name": "আন্দালুসিয়া (স্পেন)",
+          "subtitle": "ইউরোপে মুসলিম শাসন (৭১১-১৪৯২)",
+          "enabled": true
+        },
+        {
+          "id": "history_crusades_ayyubid",
+          "name": "ক্রুসেড ও আইয়ুবী সালতানাত",
+          "subtitle": "সালাহউদ্দিন আইয়ুবী ও বাইতুল মাকদিস",
+          "enabled": true
+        },
+        {
+          "id": "history_mamluk",
+          "name": "মামলুক সালতানাত",
+          "subtitle": "মিশর ও সিরিয়ার পরাশক্তি (১২৫০-১৫১৭)",
+          "enabled": true
+        },
+        {
+          "id": "history_ottoman",
+          "name": "উসমানীয় সাম্রাজ্য",
+          "subtitle": "তিন মহাদেশের খেলাফত (১২৯৯-১৯২৪)",
+          "enabled": true
+        },
+        {
+          "id": "history_mughal_safavid",
+          "name": "মোগল ও সাফাভি সাম্রাজ্য",
+          "subtitle": "ভারত ও পারস্যের মুসলিম শাসন",
+          "enabled": true
+        },
+        {
+          "id": "history_colonial",
+          "name": "ঔপনিবেশিক যুগ",
+          "subtitle": "ব্রিটিশ ও ইউরোপীয় শাসনবিরোধী সংগ্রাম",
+          "enabled": true
+        },
+        {
+          "id": "history_modern",
+          "name": "আধুনিক মুসলিম বিশ্ব",
+          "subtitle": "১৯২৪ পরবর্তী ইতিহাস ও বর্তমান অবস্থা",
+          "enabled": true
+        },
+        {
+          "id": "history_bangladesh",
+          "name": "বাংলাদেশে ইসলাম",
+          "subtitle": "বাংলায় ইসলামের আগমন ও বিকাশ",
           "enabled": true
         }
       ]
