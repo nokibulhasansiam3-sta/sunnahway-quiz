@@ -163,7 +163,7 @@
           "color": "0xFF90A4AE"
         },
         {
-          "id": "era_02_ibrahim_bani_israel",
+          "id": "era_02_israelites",
           "name": "ইব্রাহিমী ও বনী ইসরাঈল যুগ",
           "subtitle": "ইব্রাহিম (আ.) থেকে ঈসা (আ.) পর্যন্ত",
           "enabled": true,
@@ -177,14 +177,14 @@
           "color": "0xFF90A4AE"
         },
         {
-          "id": "era_04_prophethood",
+          "id": "era_04_prophet_mecca",
           "name": "নবুয়তের স্বর্ণযুগ",
           "subtitle": "৬১০ খ্রি. – ৬৩২ খ্রি.",
           "enabled": true,
           "color": "0xFF90A4AE"
         },
         {
-          "id": "era_05_khulafa_rashideen",
+          "id": "era_05_rashidun",
           "name": "খুলাফায়ে রাশেদীন",
           "subtitle": "৬৩২ খ্রি. – ৬৬১ খ্রি.",
           "enabled": true,
@@ -219,7 +219,7 @@
           "color": "0xFF90A4AE"
         },
         {
-          "id": "era_10_seljuk_ayyubid",
+          "id": "era_10_seljuk",
           "name": "সেলজুক ও আইয়ুবী যুগ",
           "subtitle": "১০৩৭ খ্রি. – ১২৫০ খ্রি. (ক্রুসেড বিরোধী)",
           "enabled": true,
@@ -233,7 +233,7 @@
           "color": "0xFF90A4AE"
         },
         {
-          "id": "era_12_post_mongol",
+          "id": "era_12_mongol",
           "name": "মোঙ্গল পরবর্তী যুগ",
           "subtitle": "১২৫৮ খ্রি. – ১৫০০ খ্রি.",
           "enabled": true,
