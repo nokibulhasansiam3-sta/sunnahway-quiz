@@ -284,7 +284,176 @@
       "color": "0xFFD32F2F",
       "questionCount": 0,
       "enabled": true,
-      "subcategories": []
+      "subcategories": [
+        {
+          "id": "battle_badr",
+          "name": "বদর যুদ্ধ",
+          "subtitle": "২ হিজরি - প্রথম বড় বিজয়",
+          "enabled": true,
+          "color": "0xFFD32F2F"
+        },
+        {
+          "id": "battle_uhud",
+          "name": "উহুদ যুদ্ধ",
+          "subtitle": "৩ হিজরি - পরীক্ষার যুদ্ধ",
+          "enabled": true,
+          "color": "0xFFD32F2F"
+        },
+        {
+          "id": "battle_khandaq",
+          "name": "খন্দক (পরিখা) যুদ্ধ",
+          "subtitle": "৫ হিজরি - কৌশলের যুদ্ধ",
+          "enabled": true,
+          "color": "0xFFD32F2F"
+        },
+        {
+          "id": "battle_khaybar",
+          "name": "খায়বর যুদ্ধ",
+          "subtitle": "৭ হিজরি - দুর্গ বিজয়",
+          "enabled": true,
+          "color": "0xFFD32F2F"
+        },
+        {
+          "id": "battle_mutah",
+          "name": "মুতাহ যুদ্ধ",
+          "subtitle": "৮ হিজরি - রোমানদের বিরুদ্ধে প্রথম",
+          "enabled": true,
+          "color": "0xFFD32F2F"
+        },
+        {
+          "id": "battle_makkah_conquest",
+          "name": "মক্কা বিজয়",
+          "subtitle": "৮ হিজরি - মহান বিজয়",
+          "enabled": true,
+          "color": "0xFFD32F2F"
+        },
+        {
+          "id": "battle_hunayn",
+          "name": "হুনাইন যুদ্ধ",
+          "subtitle": "৮ হিজরি - মক্কা বিজয়ের পর",
+          "enabled": true,
+          "color": "0xFFD32F2F"
+        },
+        {
+          "id": "battle_tabuk",
+          "name": "তাবুক অভিযান",
+          "subtitle": "৯ হিজরি - শেষ অভিযান",
+          "enabled": true,
+          "color": "0xFFD32F2F"
+        },
+        {
+          "id": "battle_riddah",
+          "name": "রিদ্দা যুদ্ধসমূহ",
+          "subtitle": "আবু বকর (রা.)-এর সময়",
+          "enabled": true,
+          "color": "0xFFD32F2F"
+        },
+        {
+          "id": "battle_yarmuk",
+          "name": "ইয়ারমুক যুদ্ধ",
+          "subtitle": "রোমানদের বিরুদ্ধে সিরিয়া বিজয়",
+          "enabled": true,
+          "color": "0xFFD32F2F"
+        },
+        {
+          "id": "battle_qadisiyyah",
+          "name": "কাদিসিয়া যুদ্ধ",
+          "subtitle": "পারসিকদের বিরুদ্ধে",
+          "enabled": true,
+          "color": "0xFFD32F2F"
+        },
+        {
+          "id": "battle_nahavand",
+          "name": "নাহাওয়ান্দ যুদ্ধ",
+          "subtitle": "পারস্যের চূড়ান্ত পতন",
+          "enabled": true,
+          "color": "0xFFD32F2F"
+        },
+        {
+          "id": "battle_karbala",
+          "name": "কারবালার যুদ্ধ",
+          "subtitle": "ইমাম হুসাইন (রা.)-এর শাহাদাত",
+          "enabled": true,
+          "color": "0xFFD32F2F"
+        },
+        {
+          "id": "battle_guadalete",
+          "name": "গুয়াদালেত যুদ্ধ",
+          "subtitle": "তারিক বিন জিয়াদ - স্পেন বিজয়",
+          "enabled": true,
+          "color": "0xFFD32F2F"
+        },
+        {
+          "id": "battle_talas",
+          "name": "তালাসের যুদ্ধ",
+          "subtitle": "চীনাদের বিরুদ্ধে বিজয়",
+          "enabled": true,
+          "color": "0xFFD32F2F"
+        },
+        {
+          "id": "battle_manzikert",
+          "name": "মানজিকার্ট যুদ্ধ",
+          "subtitle": "সেলজুক তুর্কিদের বিজয়",
+          "enabled": true,
+          "color": "0xFFD32F2F"
+        },
+        {
+          "id": "battle_hattin",
+          "name": "হাত্তিন যুদ্ধ",
+          "subtitle": "সালাহউদ্দীন - জেরুজালেম মুক্তি",
+          "enabled": true,
+          "color": "0xFFD32F2F"
+        },
+        {
+          "id": "battle_crusades",
+          "name": "ক্রুসেড যুদ্ধসমূহ",
+          "subtitle": "২০০ বছরের লড়াই",
+          "enabled": true,
+          "color": "0xFFD32F2F"
+        },
+        {
+          "id": "battle_ain_jalut",
+          "name": "আইন জালুত যুদ্ধ",
+          "subtitle": "মঙ্গোলদের বিরুদ্ধে মামলুক বিজয়",
+          "enabled": true,
+          "color": "0xFFD32F2F"
+        },
+        {
+          "id": "battle_panipat",
+          "name": "পানিপথের যুদ্ধসমূহ",
+          "subtitle": "বাবর ও মুঘল সাম্রাজ্য",
+          "enabled": true,
+          "color": "0xFFD32F2F"
+        },
+        {
+          "id": "battle_constantinople",
+          "name": "কনস্টানটিনোপল বিজয়",
+          "subtitle": "১৪৫৩ - সুলতান মেহমেদ ফাতিহ",
+          "enabled": true,
+          "color": "0xFFD32F2F"
+        },
+        {
+          "id": "battle_lepanto",
+          "name": "লেপান্তো যুদ্ধ",
+          "subtitle": "ভূমধ্যসাগরে নৌ-যুদ্ধ",
+          "enabled": true,
+          "color": "0xFFD32F2F"
+        },
+        {
+          "id": "battle_plassey",
+          "name": "পলাশীর যুদ্ধ",
+          "subtitle": "১৭৫৭ - বাংলার নবাব ও ব্রিটিশ",
+          "enabled": true,
+          "color": "0xFFD32F2F"
+        },
+        {
+          "id": "battle_arab_israel",
+          "name": "আরব-ইসরায়েল যুদ্ধসমূহ",
+          "subtitle": "১৯৪৮-১৯৭৩",
+          "enabled": true,
+          "color": "0xFFD32F2F"
+        }
+      ]
     },
     {
       "id": "fiqh_jurisprudence",
